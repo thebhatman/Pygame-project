@@ -953,3 +953,61 @@ def gameloop(level):
 		#clock.tick(10000)
 
 intro()
+
+#using Flux
+#using Flux.Tracker
+#using Flux.Tracker: update!
+#using LinearAlgebra
+#using Tracker
+#using Statistics
+
+#x = rand(200,50)
+#y = rand(200,1)
+#w = param(rand(50,1))
+
+#λ = 20
+#function lm_srhink(x,y,λ,η,l)
+
+
+### Compute the Lasso
+# estimates are obtained by gradient descent
+
+# x: input matrix
+# y: response vector
+# λ: shrinkage parameter
+# η: learning rate
+# l: norm to be used
+
+
+# check for the input
+#w = param(transpose(mean(x,dims = 1)))
+
+# define the linear model
+#lin(x) = x*w
+
+#define the penalty function
+#penalty() = norm(w,l)
+
+# loss function to minimize
+#function ℓ(x, y)
+#ŷ = lin(x)
+#sum((y .- ŷ).^2) + λ*penalty()
+#end
+
+#set parameters for gradient descnet
+#w1 = params(w)
+
+# Define learning rate for the
+#opt = Descent(η)
+
+#ε = 10^9
+
+#while ε > 0.05
+#    Δ = Tracker.gradient(() -> ℓ(x,y), w1)
+#    update!(opt,w1,Δ)
+#    ε -= abs(ε - ℓ(x,y))
+#end
+
+# return w, ℓ(x,y)
+# end
+
