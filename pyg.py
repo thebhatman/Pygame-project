@@ -15,7 +15,7 @@ grey = (200,200,200)
 
 dw = 900 
 dh = 600
-
+test_var_jas = 0
 gd = pygame.display.set_mode((dw,dh))
 
 #game images
@@ -58,7 +58,7 @@ def textobj(text , color, size):
 		textsurf = largefont.render(text , True ,color)
 	return textsurf , textsurf.get_rect()
 
-
+# this defines the message that will be printed on screen
 def message_to_screen (msg , color = (0,0,0) ,xd=0 , yd = 0 , size = "large"):
 	textsurf , textrect = textobj(msg,color,size)
 	textrect.center = (dw/2)+xd,(dh/2)+yd
